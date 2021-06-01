@@ -9,7 +9,6 @@ class Car extends Component {
     }
 
     componentDidMount(){
-        console.log('toto TA MERE LA PUTE')
     }
     
     
@@ -26,9 +25,7 @@ class Car extends Component {
                         - Puissance (cH) : {this.props.data.puissance} {'\n'}
                         - Année : {this.props.data.annee}
                 </Text>
-                    <Button
-                        buttonStyle={{ borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0 }}
-                        title='VOIR' />
+                    <Button buttonStyle={{ borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0 }} title={`${this.props.data.prix} €`} />
 
 
                 </Card>
